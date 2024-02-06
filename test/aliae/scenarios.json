@@ -1,0 +1,16 @@
+{
+  "installed": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "aliae": {}
+    }
+  },
+  "version": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "aliae": {
+        "version": "0.17.1"
+      }
+    }
+  }
+}

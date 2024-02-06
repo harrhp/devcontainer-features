@@ -1,0 +1,16 @@
+{
+  "installed": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "oh-my-posh": {}
+    }
+  },
+  "version": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "oh-my-posh": {
+        "version": "19.8.2"
+      }
+    }
+  }
+}

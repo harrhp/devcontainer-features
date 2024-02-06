@@ -1,0 +1,17 @@
+{
+  "name": "aliae",
+  "id": "aliae",
+  "version": "1.0.0",
+  "documentationURL": "https://github.com/harrhp/devcontainer-features/tree/HEAD/src/aliae",
+  "description": "Cross platform shell management",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": [
+        "latest"
+      ],
+      "type": "string"
+    }
+  }
+}
