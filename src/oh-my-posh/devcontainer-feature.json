@@ -1,0 +1,17 @@
+{
+  "name": "oh-my-posh",
+  "id": "oh-my-posh",
+  "version": "1.0.0",
+  "documentationURL": "https://github.com/harrhp/devcontainer-features/tree/HEAD/src/oh-my-posh",
+  "description": "A prompt theme engine for any shell",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": [
+        "latest"
+      ],
+      "type": "string"
+    }
+  }
+}
