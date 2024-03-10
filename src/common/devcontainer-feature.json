@@ -1,0 +1,28 @@
+{
+  "name": "common",
+  "id": "common",
+  "version": "1.0.0",
+  "description": "Common tools and settings",
+  "documentationURL": "https://github.com/harrhp/devcontainer-features/tree/HEAD/src/common",
+  "options": {},
+  "dependsOn": {
+    "ghcr.io/harrhp/devcontainer-features/aliae:1": {},
+    "ghcr.io/harrhp/devcontainer-features/oh-my-posh:1": {},
+    "ghcr.io/devcontainers/features/powershell:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file",
+        "editor.formatOnType": true
+      },
+      "extensions": [
+        "editorconfig.editorconfig",
+        "jbockle.jbockle-format-files",
+        "GitHub.vscode-github-actions",
+        "redhat.vscode-yaml"
+      ]
+    }
+  }
+}
