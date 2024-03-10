@@ -5,25 +5,11 @@
     "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/marcozac/devcontainer-features/shellcheck:1": {},
-    "ghcr.io/harrhp/devcontainer-features/aliae:1": {},
-    "ghcr.io/harrhp/devcontainer-features/oh-my-posh:1": {}
+    "ghcr.io/harrhp/devcontainer-features/common:1": {}
   },
   "customizations": {
     "vscode": {
       "settings": {
-        "editor.formatOnSave": true,
-        "editor.formatOnSaveMode": "file",
-        "editor.formatOnType": true,
-        "terminal.integrated.defaultProfile.linux": "bash",
-        "terminal.integrated.profiles.linux": {
-          "bash": {
-            "path": "bash",
-            "icon": "terminal-bash",
-            "args": [
-              "--login"
-            ]
-          }
-        },
         "json.schemas": [
           {
             "fileMatch": [
@@ -34,10 +20,7 @@
         ]
       },
       "extensions": [
-        "mads-hartmann.bash-ide-vscode",
-        "editorconfig.editorconfig",
-        "jbockle.jbockle-format-files",
-        "redhat.vscode-yaml"
+        "mads-hartmann.bash-ide-vscode"
       ]
     }
   }
