@@ -1,7 +1,7 @@
 {
   "name": "common",
   "id": "common",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Common tools and settings",
   "documentationURL": "https://github.com/harrhp/devcontainer-features/tree/HEAD/src/common",
   "options": {},
@@ -10,12 +10,27 @@
     "ghcr.io/harrhp/devcontainer-features/oh-my-posh:1": {},
     "ghcr.io/devcontainers/features/powershell:1": {}
   },
+  "mounts": [
+    {
+      "source": "${devcontainerId}-pwsh-history",
+      "target": "/home/vscode/.local/share/powershell/PSReadLine",
+      "type": "volume"
+    }
+  ],
+  "postStartCommand": "sudo chown -R $USER:$USER $HOME/.local",
   "customizations": {
     "vscode": {
       "settings": {
         "editor.formatOnSave": true,
         "editor.formatOnSaveMode": "file",
-        "editor.formatOnType": true
+        "editor.formatOnType": true,
+        "terminal.integrated.automationProfile.linux": {
+          "path": "pwsh",
+          "args": [
+            "-NoProfile",
+            "-NonInteractive"
+          ]
+        }
       },
       "extensions": [
         "editorconfig.editorconfig",
