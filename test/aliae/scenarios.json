@@ -1,12 +1,12 @@
 {
   "installed": {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
     "features": {
       "aliae": {}
     }
   },
   "version": {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
     "features": {
       "aliae": {
         "version": "0.17.1"

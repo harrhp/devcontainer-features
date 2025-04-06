@@ -1,0 +1,32 @@
+{
+  "name": "dhall",
+  "id": "dhall",
+  "version": "1.0.0",
+  "description": "Dhall is a programmable configuration language optimized for maintainability",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": [
+        "latest"
+      ],
+      "type": "string"
+    },
+    "additionalBinaries": {
+      "default": "",
+      "description": "List of binaries in format [[lib-name:]asset-name:]binary-names",
+      "type": "string",
+      "proposals": [
+        "dhall-yaml:dhall-yaml:dhall-to-yaml-ng,yaml-to-dhall dhall-json:dhall-to-json"
+      ]
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dhall.vscode-dhall-lsp-server",
+        "dhall.dhall-lang"
+      ]
+    }
+  }
+}

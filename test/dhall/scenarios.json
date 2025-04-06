@@ -1,15 +1,15 @@
 {
-  "installed": {
+  "baseAssets": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
     "features": {
-      "oh-my-posh": {}
+      "dhall": {}
     }
   },
-  "version": {
+  "additionalBinaries": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
     "features": {
-      "oh-my-posh": {
-        "version": "19.8.2"
+      "dhall": {
+        "additionalBinaries": "dhall-yaml:dhall-yaml:dhall-to-yaml-ng,yaml-to-dhall dhall-json:dhall-to-json"
       }
     }
   }

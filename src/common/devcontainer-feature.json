@@ -12,12 +12,12 @@
   },
   "mounts": [
     {
-      "source": "${devcontainerId}-pwsh-history",
+      "source": "pwsh-history-${devcontainerId}",
       "target": "/home/vscode/.local/share/powershell/PSReadLine",
       "type": "volume"
     }
   ],
-  "postStartCommand": "sudo chown -R $USER:$USER $HOME/.local",
+  "postCreateCommand": "sudo chown -R $USER:$USER $HOME/.local",
   "customizations": {
     "vscode": {
       "settings": {

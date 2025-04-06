@@ -1,27 +1,3 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {},
-    "ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "ghcr.io/marcozac/devcontainer-features/shellcheck:1": {},
-    "ghcr.io/harrhp/devcontainer-features/common:1": {}
-  },
-  "customizations": {
-    "vscode": {
-      "settings": {
-        "json.schemas": [
-          {
-            "fileMatch": [
-              "*/devcontainer-feature.json"
-            ],
-            "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
-          }
-        ]
-      },
-      "extensions": [
-        "mads-hartmann.bash-ide-vscode"
-      ]
-    }
-  }
+  "image": "ghcr.io/harrhp/devcontainer:main"
 }
